@@ -612,6 +612,11 @@ ALTER TABLE mis_tab_gestalten
     ADD CONSTRAINT mis_fk_gestalten_Ausstellungen
     FOREIGN KEY (ID_Ausstellungen)
     REFERENCES mis_tab_Ausstellungen;
+    
+ALTER TABLE mis_tab_Gebaeude
+    ADD CONSTRAINT mis_fk_Gebaeude_Adresse
+    FOREIGN KEY (ID_Adresse)
+    REFERENCES mis_tab_Adresse;
 
 ALTER TABLE mis_tab_Raeume
     ADD CONSTRAINT mis_fk_Raeume_Gebaeude
